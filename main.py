@@ -1,10 +1,10 @@
 import os
 import openai
+from api_secrets import  API_KEY
 
-API_KEY = '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'
 openai.api_key = API_KEY
 
-prompt = input()
+prompt = "Say this is test"
 
 model = 'text-davinci-003'
 response = openai.Completion.create(
