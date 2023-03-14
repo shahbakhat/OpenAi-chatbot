@@ -15,6 +15,7 @@ response = openai.Completion.create(
     n = 1,
     stop = ['---'],
 )
+print(response)
 # print(response)
 #  "created": 1678810576,
 # "id": "cmpl-6u1bs8IUlYdc3UudkvAavvt8pVAty",
@@ -24,7 +25,4 @@ response = openai.Completion.create(
 #  "completion_tokens": 16,
 #   "prompt_tokens": 6,
 #   "total_tokens": 22
-print(response.usage.total_tokens)
 
-for results in response.choices[0].text:
-    print(results.text)
